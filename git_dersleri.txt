@@ -9,3 +9,8 @@ Genel Git Öğrenimi İçin Tüm Terminal Kısayol ve Özellikleri
 	ls -a			Terminalin faaliyet gösterdiği klasörün içindeki gizliler dahil tüm dosya ve klasörleri göstermesini sağlar.
 	git init		Terminalin faaliyet gösterdiği klasörü local bir git reposuna dönüştürür.
 	git status		Terminalin faaliyet gösterdiği klasörün git durumunu bildirir.
+	git add a.txt		Terminalin faaliyet gösterdiği klasör içindeki "a.txt" dosyasını git commit listesine alır.
+	git add .		Terminalin faaliyet gösterdiği klasör içindeki tüm dosyaları git commit listesine alır.
+	git commit -m "a"	Seçilen commit listesini commit eder ve buradaki "a" ise commit mesajını barındırır.
+	git log			Git reposunda yapılan tüm değişiklikleri ayrıntılı bir şekilde gösterir.
+	git log --oneline	Git reposunda yapılan tüm değişiklikleri basit bir şekilde gösterir.
