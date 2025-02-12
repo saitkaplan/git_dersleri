@@ -23,3 +23,4 @@ Genel Git Öğrenimi İçin Tüm Terminal Komutları ve Onların Özellikleri
 	git rm -r a/			Commit edilmiş a klasörünü ve içeriğindeki tüm dosyaları siler.
 	git mv a.txt b.txt		Commit edilmiş "a.txt" dosyasının ismi veya uzantısı farketmeksizin değiştirmeye ve "b.txt" ye çevirmesini sağlar.
 	git mv a.txt b/			Commit edilmiş "a.txt" dosyasının b klasörüne taşınmasını sağlar.
+	git mv a.txt b/b.txt		Bu komut ise "a.txt" dosyasının hem adını veya uzantısını "b.txt" ye dönüştürüyor hemde b klasörüne taşınmasını sağlıyor.
