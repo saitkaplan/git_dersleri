@@ -1,16 +1,17 @@
-Genel Git Öğrenimi İçin Tüm Terminal Kısayol ve Özellikleri
+Genel Git Öğrenimi İçin Tüm Terminal Komutları ve Onların Özellikleri
 
-	pwd			Terminalin o an hangi noktada faaliyet gösterdiğinin öğrenilmesini sağlar.
-	cd ..			Terminalin o an bulunduğu klasörden bir önceki klasöre dönmesini sağlar.
-	cd a			Terminalin "a" klasörüne gitmesini ve o noktada faaliyet göstermesini sağlar.
-	mkdir a			Terminalin "a" isminde bir klasör oluşturmasını sağlar.
-	touch a.txt		Terminalin "a.txt" isminde bir dosya oluşturmasını sağlar. Burada oluşturulan dosya, kendi yol uzantısı ile belirlenebilir yani "a.dart" yazılırsa dart uzantılı bir dosya oluşturur.
-	ls			Terminalin faaliyet gösterdiği klasörün içindeki tüm dosya ve klasörleri göstermesini sağlar.
-	ls -a			Terminalin faaliyet gösterdiği klasörün içindeki gizliler dahil tüm dosya ve klasörleri göstermesini sağlar.
-	git init		Terminalin faaliyet gösterdiği klasörü local bir git reposuna dönüştürür.
-	git status		Terminalin faaliyet gösterdiği klasörün git durumunu bildirir.
-	git add a.txt		Terminalin faaliyet gösterdiği klasör içindeki "a.txt" dosyasını git commit listesine alır.
-	git add .		Terminalin faaliyet gösterdiği klasör içindeki tüm dosyaları git commit listesine alır.
-	git commit -m "a"	Seçilen commit listesini commit eder ve buradaki "a" ise commit mesajını barındırır.
-	git log			Git reposunda yapılan tüm değişiklikleri ayrıntılı bir şekilde gösterir.
-	git log --oneline	Git reposunda yapılan tüm değişiklikleri basit bir şekilde gösterir.
+	pwd				Terminalin o an hangi noktada faaliyet gösterdiğinin öğrenilmesini sağlar.
+	cd ..				Terminalin o an bulunduğu klasörden bir önceki klasöre dönmesini sağlar.
+	cd a				Terminalin "a" klasörüne gitmesini ve o noktada faaliyet göstermesini sağlar.
+	mkdir a				Terminalin "a" isminde bir klasör oluşturmasını sağlar.
+	touch a.txt			Terminalin "a.txt" isminde bir dosya oluşturmasını sağlar. Burada oluşturulan dosya, kendi yol uzantısı ile belirlenebilir yani "a.dart" yazılırsa dart uzantılı bir dosya oluşturur.
+	ls				Terminalin faaliyet gösterdiği klasörün içindeki tüm dosya ve klasörleri göstermesini sağlar.
+	ls -a				Terminalin faaliyet gösterdiği klasörün içindeki gizliler dahil tüm dosya ve klasörleri göstermesini sağlar.
+	git init			Terminalin faaliyet gösterdiği klasörü local bir git reposuna dönüştürür.
+	git status			Terminalin faaliyet gösterdiği klasörün git durumunu bildirir.
+	git add a.txt			Terminalin faaliyet gösterdiği klasör içindeki "a.txt" dosyasını git commit listesine alır.
+	git add .			Terminalin faaliyet gösterdiği klasör içindeki tüm dosyaları git commit listesine alır.
+	git commit -m "a"		Seçilen commit listesini commit eder ve buradaki "a" ise commit mesajını barındırır.
+	git log				Git reposunda yapılan tüm değişiklikleri ayrıntılı bir şekilde gösterir.
+	git log --oneline		Git reposunda yapılan tüm değişiklikleri basit bir şekilde gösterir.
+	git checkout commitid -- .	Yapılan commitler içinden seçilen commitin özel id'sini "git log" komutunu kullanarak öğrenilip buradaki "commitid" kısmına yazılıp tüm dosyaların ve içeriklerinin id'si verilen commit'teki haline geri dönmesini sağlar.
