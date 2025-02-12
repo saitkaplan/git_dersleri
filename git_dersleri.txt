@@ -1,5 +1,6 @@
-Genel Git Öğrenimi İçin Tüm Terminal Komutları ve Onların Özellikleri
+Genel Git öğrenimi ve buna bağlı tüm terminal komutları ve özellikleri:
 
+	git config --list		Git ve GitHub ile yapılan bağlantıların ayrıntılı bilgisini verir.
 	pwd				Terminalin o an hangi noktada faaliyet gösterdiğinin öğrenilmesini sağlar.
 	cd ..				Terminalin o an bulunduğu klasörden bir önceki klasöre dönmesini sağlar.
 	cd a				Terminalin "a" klasörüne gitmesini ve o noktada faaliyet göstermesini sağlar.
@@ -23,4 +24,13 @@ Genel Git Öğrenimi İçin Tüm Terminal Komutları ve Onların Özellikleri
 	git rm -r a/			Commit edilmiş a klasörünü ve içeriğindeki tüm dosyaları siler.
 	git mv a.txt b.txt		Commit edilmiş "a.txt" dosyasının ismi veya uzantısı farketmeksizin değiştirmeye ve "b.txt" ye çevirmesini sağlar.
 	git mv a.txt b/			Commit edilmiş "a.txt" dosyasının b klasörüne taşınmasını sağlar.
-	git mv a.txt b/b.txt		Bu komut ise "a.txt" dosyasının hem adını veya uzantısını "b.txt" ye dönüştürüyor hemde b klasörüne taşınmasını sağlıyor.
+	git mv a.txt b/b.txt		Bu komut ise "a.txt" dosyasının hem adını veya uzantısını "b.txt" ye dönüştürüyor hemde "b" klasörüne taşınmasını sağlar.
+	
+
+Genel Github öğrenimi ve buna bağlı özel git ve GitHub bağlantılı terminal komutları ve özellikleri:
+
+	git remote add origin https://<TOKEN>@github.com/<KULLANICI_ADI>/<REPO_ADI>.git 	Komutu, repoya özel bağlantı oluşturulup terminal üzerinden istenilen dosyaları commitlemek için gerekli bağlantıyı sağlar. Bu bağlantının adı "origin" olmakla beraber bu komuttaki diğer bilinmeyenler ise şu şekilde açıklanabilir. "<TOKEN>", GitHub sitesindeki; sağ üst köşedeki profil fotoğrafı > settings > developer settings > personal access tokens > tokens (classic) > generate new token butonu üstünden generate new token (classic) seçimiyle oluşturulabilir ve bu token oluşturulurken verilen izinlere göre bu tokeni kullanan kişi gerekli reponun kontrolünü sağlayabilir. Oluşturulan token bir defaya mahsus göründüğünden o an tokenin kaydedilmesi önem arz etmektedir. <KULLANICI_ADI> ve <REPO_ADI> ise kullanılmak ve bağın kurulduğu repo ve o reponun sahibi olan hesabın kullanıcı adıdır.
+
+	git remote remove origin 								Komutu, GitHub Token'i ile kurulan bağlantıyı komple kaldırır.
+	
+	git push -u origin main									Komutu, origin yolu ile kurulan bağlantı sayesinde commitlenen tüm değişkenleri ve dosyaları GitHub reposuna yazar.
