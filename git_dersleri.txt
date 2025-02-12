@@ -15,3 +15,7 @@ Genel Git Öğrenimi İçin Tüm Terminal Komutları ve Onların Özellikleri
 	git log				Git reposunda yapılan tüm değişiklikleri ayrıntılı bir şekilde gösterir.
 	git log --oneline		Git reposunda yapılan tüm değişiklikleri basit bir şekilde gösterir.
 	git checkout commitid -- .	Yapılan commitler içinden seçilen commitin özel id'sini "git log" komutunu kullanarak öğrenilip buradaki "commitid" kısmına yazılıp tüm dosyaların ve içeriklerinin id'si verilen commit'teki haline geri dönmesini sağlar.
+	git checkout -- a.txt		Git reposuna commitlenmemiş bile olsa "a.txt" dosyasının içeriğini bir adım geri almasını sağlar. Buradaki bu dosya hiç commit edilmemişse eğer en son yapılan commit içeriği ile dosya içeriği eşlenir. Bu diğer metoda göre tek dosyalı geri alma sayılır.
+	git diff			Commit edilmiş klasör içerisindeki tüm dosyaların içerisinde yapılan değişimleri gösterir.
+	git diff a.txt			Commit edilmiş klasör içerisindeki "a.txt" dosyasının içerisinde yapılan değişimleri gösterir.
+	git reset HEAD a.txt		Commit listesine alınmış ama commitlenmemiş "a.txt" dosyasını commit listesinden çıkartılmasını sağlar.
